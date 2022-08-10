@@ -1,0 +1,17 @@
+@import '../abstract/variables';
+
+@mixin text-h3( $weight, $size, $color) {
+    font-family: $text-family-primary;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin text-p($size, $family, $weight, $height, $color) {
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+}
+

@@ -1,0 +1,53 @@
+@import '../abstract/variables';
+@import '../abstract/mixin';
+
+.opinion{
+    background-color: $off-white;
+    padding-bottom: $space * 10;
+    
+    h2{
+        padding-block: $space * 10;
+        @include text-h3(700, $text-size-400, $dark-blue);
+        text-align: center;
+        
+    }
+    ul{
+        list-style: none;
+        text-align: center;
+
+        p{
+            @include text-p($text-size-200, $text-family-secundary, 400, 3.2rem, $dark-gray);
+            margin-block: $space * 2;
+        }
+
+        h3{
+            @include text-h3(700, $text-size-300, black);
+        }
+
+        span{
+            @include text-p($text-size-100, $text-family-secundary, 400, 3.4, $dark-gray )
+        }
+
+
+    }
+}
+
+@media(min-width:800px){
+
+    .opinion{
+        padding-block: $space * 20;
+        h2{
+            font-size: $text-size-500;
+        }
+
+        ul{
+            display: flex;
+            gap: $space * 4.875;
+        }
+    }
+}
+
+
+
+
+

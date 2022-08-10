@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  margin: auto;
+  max-width: min(90%, 1100px);
+}
+
+.navbar {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-top: 4.4rem;
+}
+.navbar ul li:last-child a {
+  padding-block: 1rem;
+  padding-inline: 0.5rem;
+  background-color: white;
+  border-radius: 4rem;
+  color: #3EBFFF;
+  font-weight: 700;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2.2rem;
+}
+.navbar nav ul a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 800px) {
+  .navbar ul li:last-child a {
+    padding-block: 1rem;
+    padding-inline: 1rem;
+  }
+}
+.hero {
+  background: url(../assets/mobile/image-header-mobile.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
+  background-position: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3.2rem;
+  color: white;
+  padding-top: 17.1rem;
+  font-family: "Fraunces", serif;
+}
+.hero svg {
+  margin-top: 9.8rem;
+}
+
+@media (min-width: 800px) {
+  .hero {
+    background: url(../assets/desktop/image-header.jpg) no-repeat;
+    background-position: top center;
+  }
+  .hero h1 {
+    font-size: 6.4rem;
+  }
+  .hero svg {
+    height: 10rem;
+    margin-top: 8rem;
+  }
+}
+.section__info .section__info__h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #23303E;
+  margin-top: 8rem;
+  margin-bottom: 1.6rem;
+  padding-right: 5rem;
+}
+.section__info .section__info__p {
+  font-size: 1.6rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: #47525C;
+  margin-bottom: 1.6rem;
+}
+.section__info .btn {
+  text-decoration: none;
+  color: #23303E;
+  font-size: 2.4rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+}
+.section__info .btn::after {
+  content: " ";
+  width: 11.8rem;
+  height: 0.9rem;
+  background: #FFE985;
+  display: block;
+  border-radius: 3.3rem;
+  position: relative;
+  bottom: 1rem;
+  z-index: -1;
+  margin-bottom: 7.9rem;
+}
+.section__info .btn__div::after {
+  background: #FFBFB8;
+}
+.section__info img {
+  width: 100vw;
+}
+
+@media (min-width: 800px) {
+  .section__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .section__info .section__info__div {
+    padding-inline: 5rem;
+  }
+  .section__info .section__info__div .section__info__h3 {
+    font-size: 4rem;
+  }
+  .section__info .section__info__div .section__info__p {
+    font-size: 2.4rem;
+  }
+  .section__info img {
+    width: 100%;
+  }
+}
+/* font-size: $text-size-100;
+        font-family: $text-family-secundary;
+        font-weight: 400;
+        line-height: 2.6rem;
+        color: $dark-gray; */
+.opinion {
+  background-color: #F3F9FC;
+  padding-bottom: 8rem;
+}
+.opinion h2 {
+  padding-block: 8rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: #23303E;
+  text-align: center;
+}
+.opinion ul {
+  list-style: none;
+  text-align: center;
+}
+.opinion ul p {
+  font-size: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  line-height: 3.2rem;
+  color: #47525C;
+  margin-block: 1.6rem;
+}
+.opinion ul h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: black;
+}
+.opinion ul span {
+  font-size: 1.6rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  line-height: 3.4;
+  color: #47525C;
+}
+
+@media (min-width: 800px) {
+  .opinion {
+    padding-block: 16rem;
+  }
+  .opinion h2 {
+    font-size: 4rem;
+  }
+  .opinion ul {
+    display: flex;
+    gap: 3.9rem;
+  }
+}
+.galery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.galery img {
+  width: 100%;
+}
+.galery .img__gallery-milkbottles {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+@media (min-width: 800px) {
+  .galery {
+    display: flex;
+  }
+}
+.footer {
+  background-color: #90D4C5;
+  text-align: center;
+  padding-top: 5.2rem;
+}
+.footer nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 3.2rem;
+  padding-top: 2.4rem;
+  padding-bottom: 4.8rem;
+}
+.footer nav ul a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Barlow", sans-serif;
+  color: #2C7566;
+}
+.footer picture {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 12rem;
+  padding-bottom: 8rem;
+}
+
+@media (min-width: 800px) {
+  .footer nav ul a {
+    font-size: 2.4rem;
+  }
+  .footer picture {
+    padding-inline: 56rem;
+  }
+}/*# sourceMappingURL=style.css.map */
